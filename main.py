@@ -15,3 +15,19 @@ pm.display_all_products()
 
 # Prikaz ukupne vrednosti inventara
 print("Total Inventory Value:", pm.total_inventory_value())
+
+from cart import Cart
+import random
+
+# Inicijalizacija korpe
+cart = Cart()
+
+# Izbor 3 nasumična proizvoda iz liste
+selected_products = random.sample(pm.products, 3)
+for product in selected_products:
+    cart.add_to_cart(product)
+
+# Prikaz sadržaja korpe i ukupne vrednosti
+cart.display_cart()
+print("Total cart value:", cart.calculate_total())
+
