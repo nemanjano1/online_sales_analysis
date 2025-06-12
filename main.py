@@ -14,6 +14,10 @@ pm.add_product(Product("Smartphone", 600, 8))
 pm.add_product(Product("E-Reader", 200, 12))
 
 
+
+# Prikaz ukupne vrednosti inventara
+print("Total Inventory Value:", pm.total_inventory_value())
+
 from cart import Cart
 import random
 
@@ -27,5 +31,8 @@ for product in selected_products:
 
 # Prikaz sadržaja korpe i ukupne vrednosti
 cart.display_cart()
+
+print("Total cart value:", cart.calculate_total())
+
 print("Total cart value:", cart.calculate_total())
 
