@@ -9,12 +9,10 @@ pm = ProductManager()
 pm.add_product(Product("Laptop", 1000, 5))
 pm.add_product(Product("Phone", 500, 10))
 pm.add_product(Product("Tablet", 300, 7))
+pm.add_product(Product("Gaming Laptop", 1500, 3))
+pm.add_product(Product("Smartphone", 600, 8))
+pm.add_product(Product("E-Reader", 200, 12))
 
-# Prikaz svih proizvoda
-pm.display_all_products()
-
-# Prikaz ukupne vrednosti inventara
-print("Total Inventory Value:", pm.total_inventory_value())
 
 from cart import Cart
 import random
